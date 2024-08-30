@@ -23,7 +23,7 @@ function sendMail(event) {
         event.preventDefault();
         return;
     }
-    emailjs.send("service_elektro", "template_elektro", params).then(
+    emailjs.send("service_gmail1", "template_generic", params).then(
         (response) => {
             Cookies.set("form-sent", "sent", { expires: 1 });
             formElement.reset();
@@ -45,12 +45,13 @@ function gatherParameters() {
         theServices[i] = checkedServices[i].value;
     }
     let params = {
+        service: "Vrata Metal Detektor",
         from_name: document.getElementById("form-name").value,
         from_mail: document.getElementById("form-email").value,
         from_number: document.getElementById("form-phone").value,
         desc: document.geteElementById("form-desc").value,
         object_type: "/",
-        services: theServices
+        job: theServices
     };
     return params;
 }
