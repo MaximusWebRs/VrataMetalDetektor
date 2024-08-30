@@ -1,0 +1,387 @@
+<html>
+
+<head>
+    <title>Vrata Metal Detektor - Maximus</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/gallery.css" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/extra-offers.js"></script>
+    <script src="js/numberCounter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/mail-sender.js"></script>
+</head>
+
+<body onload="initScroll(); initHeader(); initSlideshow(); initGallery(); initExtraOffers(); initNumberCounter(); initMailSender();"
+    onscroll="handleScroll()">
+    <header>
+        <div id="header-global">
+            <div id="header-name">
+                <img src="images/logo.jpg">
+                <h1>VRATA METAL DETEKTOR<p>Brzo, kvalitetno i povoljno.</p></h1>
+            </div>
+            <nav id="header-websites-navigation">
+                <a href="https://maximuswebrs.github.io/GlavniPortal">
+                    Glavni Portal
+                </a>
+                <a href="https://maximuswebrs.github.io/ElektroInstalacije">
+                    Elektro Instalacije
+                </a>
+                <a href="https://maximuswebrs.github.io/DojavaPozara">
+                    Protiv Požarni Sistemi
+                </a>
+                <a href="https://maximuswebrs.github.io/VideoNadzor">
+                    Video Nadzor
+                </a>
+                <a href="https://maximuswebrs.github.io/AlarmniSistemi">
+                    Alarmni Sistemi
+                </a>
+            </nav>
+            <div id="header-websites-menu-button">
+                <img id="header-websites-menu-open" class="active" src="images/icons/globe.webp">
+                <img id="header-websites-menu-close" class="inactive" src="images/icons/x-white.webp">
+            </div>
+            <nav id="header-websites-menu">
+                <a href="https://maximuswebrs.github.io/GlavniPortal">
+                    Glavni Portal
+                </a>
+                <a href="https://maximuswebrs.github.io/ElektroInstalacije">
+                    Elektro Instalacije
+                </a>
+                <a href="https://maximuswebrs.github.io/DojavaPozara">
+                    Protiv Požarni Sistemi
+                </a>
+                <a href="https://maximuswebrs.github.io/VideoNadzor">
+                    Video Nadzor
+                </a>
+                <a href="https://maximuswebrs.github.io/AlarmniSistemi">
+                    Alarmni Sistemi
+                </a>
+            </nav>
+        </div>
+        <nav id="page-navigation" data-scroll-fixed>
+            <a data-page-scroll-target="header" class="active">
+                POČETAK</a>
+            <a data-page-scroll-target="#offer" class="inactive" data-page-scroll-offset="40">
+                PONUDA</a>
+            <a data-page-scroll-target="#extra-offers" class="inactive" data-page-scroll-offset="60">
+                OSTALE USLUGE</a>
+            <a data-page-scroll-target="footer" class="inactive" data-page-scroll-offset="60">
+                KONTAKT</a>
+            <div id="page-navigation-menu-button">
+                <img id="page-navigation-menu-open" class="active" src="images/icons/triangle-red-down.webp">
+                <img id="page-navigation-menu-close" class="inactive" src="images/icons/triangle-up.webp">
+            </div>
+            <nav id="page-navigation-menu">
+                <a data-page-scroll-target-peripheral="header">
+                    POČETAK</a>
+                <a data-page-scroll-target-peripheral="#offer">
+                    PONUDA</a>
+                <a data-page-scroll-target-peripheral="#extra-offers">
+                    OSTALE USLUGE</a>
+                <a data-page-scroll-target-peripheral="footer">
+                    KONTAKT</a>
+            </nav>
+        </nav>
+    </header>
+    <section id="slideshow">
+        <div id="slideshow-images">
+            <picture class="active">
+                <source srcset="images/slideshow/slideshow-diversion-vertical.webp" media="(max-width: 800px)">
+                <source srcset="images/slideshow/slideshow-diversion.webp" media="(min-width: 800px)">
+                <img src="images/slideshow/slideshow-diversion.webp">
+            </picture>
+        </div>
+        <div id="slideshow-images-dragger" draggable="true"></div>
+        <div id="slideshow-controls">
+        </div>
+    </section>
+    <section id="manufacturers" class="scroller-w-images" style="display: none;">
+        <h1>PROIZVOĐAČI U NAŠOJ POUNDI</h1>
+        <div id="manufacturers-wrapper" class="wrapper inactive" data-horizontal-scroller="15000ms">
+            <a><img src=""></a>
+        </div>
+    </section>
+    <section id="offer">
+        <article class="left">
+            <h2>KONTRA DIVERZIONA OPREMA</h2>
+            <p>
+                Naša firma nudi vrhunsku sigurnosnu opremu, uključujući najnovije modele rendgena i vrata metal detektora. 
+                Ova rešenja su idealna za sve koji žele osigurati maksimalnu zaštitu svojih objekata i zaposlenika. 
+                Naši uređaji su jednostavni za korištenje, pouzdani i u skladu sa najvišim sigurnosnim standardima.
+                <br><br>
+                Kao partner svojih klijenata, posvećeni smo pružanju vrhunskog nivoa usluge. 
+                Naši stručnjaci će raditi sa Vama kako bi razumeli Vaše specifične potrebe i izazove, 
+                te će Vam preporučiti najbolje rešenje za zaštitu Vašeg objekta. 
+                Naša posvećenost kvalitetu, pouzdanosti i zadovoljstvu klijenata je ono što nas izdvaja kao lidera u oblasti sigurnosnih rešenja.
+            </p>
+            <a data-page-scroll-target-peripheral="footer">POŠALJITE UPIT ZA CENE</a>
+            <img src="images/offers/equipment.webp" class="inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-multi" data-screen-enter-scroll-offset="200">
+        </article>
+        <article class="right">
+            <h2>NUDIMO KOMPLETNO BEZBEDNOSNO REŠENJE</h2>
+            <p>
+                Nudimo sveobuhvatna sigurnosna rešenja, 
+                prilagođena vašim specifičnim potrebama. 
+                Pored kontra diverzionih sistema, 
+                nudimo i vrhunske video nadzorne sisteme koji 
+                omogućavaju visokokvalitetno snimanje i analizu video zapisa, 
+                kao i inteligentne alarmne sisteme koji detektuju različite vrste pretnji. 
+                Takođe, pružamo i usluge projektovanja i instalacije protivpožarnih sistema koji će zaštititi Vaše objekte i imovinu.
+            </p>
+            <a data-page-scroll-target-peripheral="footer">POŠALJITE UPIT ZA CENE</a>
+            <img src="images/offers/total-security.webp" class="inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-multi" data-screen-enter-scroll-offset="100">
+        </article>
+    </section>
+    <section id="achievements">
+        <h2>NAŠA DOSTIGNUĆA</h2>
+        <div id="achievements-showcase">
+            <div class="achievement-showcase inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-once" data-screen-enter-scroll-offset="100">
+                <div class="image-wrapper">
+                    <img src="images/icons/building.png">
+                </div>
+                <h3>Aktivni projekti</h3>
+                <p data-number-counter-target="750" data-number-counter-duration="5000" data-number-counter-observe-target="parent"></p>
+            </div>
+            <div class="achievement-showcase inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-once" data-screen-enter-scroll-offset="100">
+                <div class="image-wrapper">
+                    <img src="images/icons/handshake.png">
+                </div>
+                <h3>Zadovoljnih klijentata</h3>
+                <p data-number-counter-target="2543" data-number-counter-duration="5000" data-number-counter-observe-target="parent"></p>
+            </div>
+            <div class="achievement-showcase inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-once" data-screen-enter-scroll-offset="100">
+                <div class="image-wrapper">
+                    <img src="images/icons/group.png">
+                </div>
+                <h3>Zaposleno radnika</h3>
+                <p data-number-counter-target="25" data-number-counter-duration="3000" data-number-counter-observe-target="parent"></p>
+            </div>
+            <div class="achievement-showcase inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-once" data-screen-enter-scroll-offset="100">
+                <div class="image-wrapper">
+                    <img src="images/icons/certificates.png">
+                </div>
+                <h3>Sertifikati</h3>
+                <p data-number-counter-target="14" data-number-counter-duration="3000" data-number-counter-observe-target="parent"></p>
+            </div>
+        </div>
+    </section>
+    <section id="extra-offers">
+        <h2>SVE NA JEDNOM MESTU</h2>
+        <div id="extra-offers-wrapper">
+            <article>
+                <h2>Vrata Metal Detektori</h2>
+                <a>Pročitaj jos...</a>
+                <img src="images/extra offers/door-scanner.webp">
+                <p>
+                    Vrata metal detektori su sigurnosni uređaji koji se koriste za detekciju metalnih predmeta na osobama. 
+                    Oni stvaraju elektromagnetno polje koje se prekida kada metalni objekt prođe kroz detektor, aktivirajući alarm. 
+                    Široko se koriste na aerodromima, u sudnicama, zatvorima i drugim objektima gde je potreban visok stepen bezbednosti.
+                    <br><br>
+                    Nudimo širok spektar vrata metal detektora, uključujući modele od 6 do 45 zona, 
+                    kako bi se zadovoljile različite potrebe sigurnosti.
+                </p>
+                <div class="gallery" title="Vrata Metal Detektori">
+                    <img src="images/galleries/doors/33-zones.jpg" alt="Vrata Metal Detektor 33 Zone" class="active">
+                    <img src="images/galleries/doors/6-zones.jpg" alt="Vrata Metal Detektor 6 Zona">
+                    <img src="images/galleries/doors/6-zones-prikaz.jpg" alt="Grafički prikaz vrata sa 6 zona">
+                    <img src="images/galleries/doors/45-zones.jpg" alt="Vrata Metal Detektor 45 Zona">
+                    <img src="images/galleries/doors/45-zones-prikaz.jpg" alt="Grafički prikaz vrata sa 45 zona">
+                </div>
+            </article>
+            <article>
+                <h2>Modularna Vrata</h2>
+                <a>Pročitaj jos...</a>
+                <img src="images/extra offers/modular-door-scanner.webp">
+                <p>
+                    Modularna vrata metal detektora predstavljaju vrhunsku tehnologiju u oblasti kontra diverzije. 
+                    Sastavljena od modularnih elemenata, ova vrata omogućavaju brzu i laku montažu i demontažu, 
+                    što ih čini pogodnim za privremene bezbednosne situacije. Visokosenzitivni senzori precizno 
+                    detektuju metalne objekte svih veličina, osiguravajući maksimalnu sigurnost.
+                    <br><br>
+                    U ponudi imamo modularna metal detektor vrata sa 8 zona detekcije.
+                </p>
+                <div class="gallery" title="Vrata Metal Detektori">
+                    <img src="images/galleries/modular-door/door-0.jpg" alt="Modularna Metal Detektor Vrata sa 8 Zona" class="active">
+                    <img src="images/galleries/modular-door/door-1.jpg" alt="Kako su modularna vrata montirana">
+                    <img src="images/galleries/modular-door/door-2.jpg" alt="Tehničke karakteristike modularnih vrata">
+                    <img src="images/galleries/modular-door/door-3.jpg" alt="Spakovana modularna vrata">
+                </div>
+            </article>
+            <article>
+                <h2>Rendgen Skeneri</h2>
+                <a>Pročitaj jos...</a>
+                <img src="images/extra offers/rendgen-scanner.webp">
+                <p>
+                    Rendgenska, ili x-ray kontradiverziona oprema za skeniranje prtljaga 
+                    nezaobilazni je deo savremenih sigurnosnih sistema na aerodromima, 
+                    železničkim stanicama, graničnim prielazima i drugim mestima 
+                    s velikim prometom ljudi i tereta. Ova oprema omogućuje brzo 
+                    i učinkovito pregledavanje prtljaga kako bi se otkrili 
+                    potencijalno opasni predmeti, poput eksploziva, oružija ili drugih zabranjenih stvari.
+                    <br><br>
+                    Naši rendgenski skeneri sa pokretnim trakama dolaze u različitim veličinama, 
+                    od kompaktnih modela sa prolazom 50x30cm do velikih modela sa prolazom 150x180 cm. 
+                    Ova fleksibilnost omogućuje Vam odabir idealnog rešenja za Vaše specifične potrebe.
+                </p>
+                <div class="gallery" title="X-ray Skeneri Prtljaga">
+                    <img src="images/galleries/rendgen/mgt-10080.jpg" alt="Rendgen Skener Prtljaga MGT-10080" class="active">
+                    <img src="images/galleries/rendgen/mgt-10080-2.jpg" alt="Rendgen Skener Prtljaga MGT-10080">
+                    <img src="images/galleries/rendgen/mgt-10080-preview.jpg" alt="MGT-10080 kontrolna tabla">
+                    <img src="images/galleries/rendgen/mgt-8065.jpg" alt="Rendgen Skener Prtljaga MGT-8065">
+                    <img src="images/galleries/rendgen/mgt-8065-result.jpg" alt="Rezultat MGT-8065 skenera">
+                    <img src="images/galleries/rendgen/mgt-6040.jpg" alt="Rendgen Skener Prtljaga MGT-6040 i MGT-6550">
+                    <img src="images/galleries/rendgen/mgt-6040-panel.jpg" alt="MGT-6040 i MGT-6550 kontrolni panel">
+                    <img src="images/galleries/rendgen/mgt-6040-result.jpg" alt="Rezultat MGT-6040 i MGT-6550 skenera">
+                    <img src="images/galleries/rendgen/mgt-5030.jpg" alt="Rendgen Skener Prtljaga MGT-5030">
+                    <img src="images/galleries/rendgen/mgt-5030-result.jpg" alt="Rezultat MGT-5030 skenera">
+                </div>
+            </article>
+            <article>
+                <h2>Ručni detektori</h2>
+                <a>Pročitaj jos...</a>
+                <img src="images/extra offers/hand-scanner.webp">
+                <p>
+                    Ručni detektori su kompaktni i lagani uređaji, što ih čini idealnim za mobilnu upotrebu. 
+                    Vaši radnici obezbeđenja ih mogu lako nositi sa sobom i koristiti u različitim situacijama, 
+                    od pregleda osoba pri ulasku u zgradu do patrola na velikim prostorima.
+                </p>
+            </article>
+        </div>
+        <div id="extra-offers-preview">
+            <img>
+            <article>
+                <h2></h2>
+                <p></p>
+            </article>
+            <div id="extra-offers-preview-close" onclick="hideExtraOfferPreview()"><img src="images/icons/x.png"></div>
+        </div>
+    </section>
+    <section id="partners" class="scroller-w-images" style="display: none;">
+        <h1>NAŠI SARADNICI</h1>
+        <hr>
+        <div id="partners-wrapper" class="wrapper inactive" data-horizontal-scroller="15000ms">
+            <a><img src=""></a>
+        </div>
+    </section>
+    <div id="gallery-preview">
+        <div class="wrapper">
+            <h1></h1>
+            <div class="image-wrapper">
+                <img src="https://placehold.co/700x500?text=Slika+1">
+            </div>
+            <div class="buttons-wrapper">
+                <div class="button previous" title="Prošla slika" onclick="previousImage()"></div>
+                <div class="button next" title="Sledeća slika" onclick="nextImage()"></div>
+                <div class="button close" title="Zatvori galeriju" onclick="closeGallery()"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <form onsubmit="sendMail(event);" method="post">
+            <h1>
+                Pošaljite upit
+            </h1>
+            <hr>
+            <div id="form-selectors">
+                <div id="form-selectors-extra">
+                    <h2>Usluge</h2>
+                    <div class="wrapper" required>
+                        <input type="checkbox" id="form-selector-extra-installations" name="extra" value="Instalacije"
+                            checked>
+                        <label for="form-selector-extra-installations">Instalacije</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-energetic" name="extra" value="Energetske instalacije">
+                        <label for="form-selector-extra-energetic">Energetske instalacije</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-lighting" name="extra" value="Rasveta">
+                        <label for="form-selector-extra-lighting">Rasveta</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-antipanic" name="extra" value="Antipanic">
+                        <label for="form-selector-extra-antipanic">Antipanic</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-outlets" name="extra" value="Galanterija">
+                        <label for="form-selector-extra-outlets">Galanterija</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-floorheating" name="extra"
+                            value="Podno grejanje">
+                        <label for="form-selector-extra-floorheating">Podno grejanje</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-distributioncabinet" name="extra"
+                            value="Razvodni orman">
+                        <label for="form-selector-extra-distributioncabinet">Razvodni orman</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-breakers" name="extra" value="Osigurači">
+                        <label for="form-selector-extra-breakers">Osigurači</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-grounding" name="extra" value="Uzemljenje">
+                        <label for="form-selector-extra-grounding">Uzemljenje</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-groundinglightning" name="extra"
+                            value="Gromobrani">
+                        <label for="form-selector-extra-groundinglightning">Gromobrani</label><br>
+
+                        <input type="checkbox" id="form-selector-extra-constructionsitepreparations" name="extra"
+                            value="Priprema gradilišta">
+                        <label for="form-selector-extra-constructionsitepreparations">Priprema gradilišta</label><br>
+                    </div>
+                </div>
+            </div>
+            <label for="form-desc">Napomena: </label>
+            <textarea rows="3" id="form-desc" maxlength="200"></textarea>
+            <label for="form-name">Ime, prezime: </label>
+            <input type="text" required id="form-name">
+            <label for="form-phone">Kontakt telefon: </label>
+            <input type="tel" required id="form-phone">
+            <label for="form-email">E-mail adresa: </label>
+            <input type="email" required id="form-email">
+            <input type="submit" id="form-submit" value="Pošalji">
+        </form>
+        <section id="footer-about">
+            <h2>O NAMA</h2>
+            <p>
+                Sa višegodišnjim iskustvom, nudimo kompletnu uslugu elektroinstalacija.
+                Naši stručnjaci koriste najsavremeniju opremu i materijale
+                kako bi zasnovali sigurnost i funkcionalnost vaših električnih instalacija.
+                Izvodimo sve vrste elektroinstalacija,
+                od jednostavnih popravaki do složenih industrijskih projekata.
+                Nudimo besplatne savete i izradu ponuda.
+            </p>
+            <section id="footer-contact">
+                <h2>KONTAKT</h2>
+                <a href="mailto:maximus.security@gmail.com" id="footer-contact-mail">maximus.secure@gmail.com</a>
+                <a href="tel:+38162421515" id="footer-contact-phone">+381/62-421-515</a>
+                <a href="https://maps.app.goo.gl/EcN9rNwpMbKkXXKz7" id="footer-contact-location">Cara Dušana 150</a>
+            </section>
+        </section>
+        <nav id="footer-websites">
+            <h2>NAŠA REŠENJA</h2>
+            <a href="https://maximuswebrs.github.io/GlavniPortal">
+                Glavni Portal
+            </a>
+            <a href="https://maximuswebrs.github.io/ElektroInstalacije">
+                Elektro Instalacije
+            </a>
+            <a href="https://maximuswebrs.github.io/DojavaPozara">
+                Protiv Požarni Sistemi
+            </a>
+            <a href="https://maximuswebrs.github.io/VideoNadzor">
+                Video Nadzor
+            </a>
+            <a href="https://maximuswebrs.github.io/AlarmniSistemi">
+                Alarmni Sistemi
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

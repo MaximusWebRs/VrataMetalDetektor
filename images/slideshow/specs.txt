@@ -1,0 +1,7 @@
+slideshow horizontal
+aspect ratio 3:1
+resolution 1200x400, 1600x534
+
+slideshow vertical
+aspect ration 4:5
+resolution 1280x1600
