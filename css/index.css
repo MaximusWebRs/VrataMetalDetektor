@@ -627,6 +627,7 @@ body > section {
 #extra-offers-preview {
     position: relative;
 
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     display: flex;
@@ -1196,6 +1197,10 @@ form h1 {
 
     #extra-offers-preview-close:active {
         background-color: var(--color-red);
+    }
+
+    #extra-offers-preview .gallery {
+        margin-top: 40px;
     }
 }
 
