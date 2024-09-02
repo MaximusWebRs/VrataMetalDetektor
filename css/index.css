@@ -5,7 +5,13 @@
     --color-white: #FFFFFF;
     --color-black: #0C0C0C;
 
-    user-select: none;
+    -webkit-user-select: none;
+
+       -moz-user-select: none;
+
+        -ms-user-select: none;
+
+            user-select: none;
 }
 
 @font-face {
@@ -25,6 +31,8 @@ body {
 header {
     display: flex;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     gap: 30px;
     padding: 5px 10px 0px 10px;
@@ -135,6 +143,8 @@ header a::after {
     top: 0px;
     left: 0px;
     z-index: 10;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
 }
 
@@ -220,6 +230,8 @@ body > section {
 #slideshow-images>img {
     position: absolute;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     opacity: 0;
 
@@ -237,6 +249,8 @@ body > section {
 #slideshow-controls {
     position: absolute;
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     bottom: 0px;
     z-index: 2;
@@ -278,13 +292,19 @@ body > section {
 
 .scroller-w-images .wrapper a {
     height: 35px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
-    filter: brightness(0%);
+    -webkit-filter: brightness(0%);
+            filter: brightness(0%);
+    transition: -webkit-filter 0.3s;
     transition: filter 0.3s;
+    transition: filter 0.3s, -webkit-filter 0.3s;
 }
 
 .scroller-w-images .wrapper a:hover {
-    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
 }
 
 .scroller-w-images .wrapper a img {
@@ -503,6 +523,11 @@ body > section {
     color: var(--color-red);
 }
 
+@-webkit-keyframes achievement-showcase-image {
+    from { transform: rotate(0turn); }
+    to { transform: rotate(1turn); }
+}
+
 @keyframes achievement-showcase-image {
     from { transform: rotate(0turn); }
     to { transform: rotate(1turn); }
@@ -530,10 +555,15 @@ body > section {
     border-radius: 50%;
     border: 5px dashed var(--color-red);
 
-    animation-name: achievement-showcase-image;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: achievement-showcase-image;
+
+            animation-name: achievement-showcase-image;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 .achievement-showcase .image-wrapper img {
@@ -826,6 +856,8 @@ footer a {
     position: relative;
     margin: 0px 0px 5px 20px;
     padding: 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 
     text-decoration: none;
@@ -1159,6 +1191,8 @@ form h1 {
     }
 
     #extra-offers-preview.active {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
     }
 
@@ -1294,7 +1328,7 @@ form h1 {
 
 /* END HEADER, START HEADER WEBSITE NAVIGATION */
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1300px) {
 
     #header-websites-navigation {
         display: none;

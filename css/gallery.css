@@ -25,7 +25,8 @@
 
 .gallery img.active {
     display: block;
-    object-fit:contain;
+    -o-object-fit:contain;
+       object-fit:contain;
     max-width: var(--gallery-size);
     max-height: var(--gallery-size);
 
@@ -117,7 +118,8 @@
 #gallery-preview .wrapper .image-wrapper img {
     display: none;
     position: relative;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 
     max-width: var(--gallery-preview-size);
     max-height: var(--gallery-preview-size);
