@@ -14,13 +14,15 @@
     vrata metal detektora ili rendgen skenera prtljaga? Naša kompanija 
     nudi širok asortiman visokokvalitetnih proizvoda kontra diverzione 
     opreme. Osigurajte maksimalnu zaštitu Vašeg objekta.'>
+    <meta name='keywords'
+    content='kontra diverziona oprema, obezbeđenje aerodrom, vrata metal detektor, 
+    metal detektor, ručni metal detektor, obezbeđenje, rendgen skener prtljaga, skener prtljaga'>
 
     <link href="css/index.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
 
     <script src="js/main.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/slideshow.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/extra-offers.js"></script>
     <script src="js/numberCounter.js"></script>
@@ -29,7 +31,7 @@
     <script src="js/mail-sender.js"></script>
 </head>
 
-<body onload="initScroll(); initHeader(); initSlideshow(); initGallery(); initExtraOffers(); initNumberCounter(); initMailSender();"
+<body onload="initScroll(); initHeader(); initGallery(); initExtraOffers(); initNumberCounter(); initMailSender();"
     onscroll="handleScroll()">
     <header>
         <div id="header-global">
@@ -107,23 +109,7 @@
             </nav>
         </nav>
     </header>
-    <section id="slideshow">
-        <div id="slideshow-images">
-            <picture class="active">
-                <source srcset="images/slideshow/slideshow-diversion-vertical.webp" media="(max-width: 800px)">
-                <source srcset="images/slideshow/slideshow-diversion.webp" media="(min-width: 800px)">
-                <img src="images/slideshow/slideshow-diversion.webp">
-            </picture>
-        </div>
-        <div id="slideshow-images-dragger" draggable="true"></div>
-        <div id="slideshow-controls">
-        </div>
-    </section>
-    <section id="manufacturers" class="scroller-w-images" style="display: none;">
-        <h1>PROIZVOĐAČI U NAŠOJ POUNDI</h1>
-        <div id="manufacturers-wrapper" class="wrapper inactive" data-horizontal-scroller="15000ms">
-            <a><img src=""></a>
-        </div>
+    <section id="page-top">
     </section>
     <section id="offer">
         <article class="left">
@@ -139,7 +125,7 @@
                 Naša posvećenost kvalitetu, pouzdanosti i zadovoljstvu klijenata je ono što nas izdvaja kao lidera u oblasti sigurnosnih rešenja.
             </p>
             <a data-page-scroll-target-peripheral="footer">POŠALJITE UPIT ZA CENE</a>
-            <img src="images/offers/equipment.webp" class="inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-multi" data-screen-enter-scroll-offset="200">
+            <img src="images/offers/equipment.webp" class="inactive" data-screen-enter-scroll data-screen-enter-scroll-mode="show-multi" data-screen-enter-scroll-offset="-200">
         </article>
         <article class="right">
             <h2>NUDIMO KOMPLETNO BEZBEDNOSNO REŠENJE</h2>

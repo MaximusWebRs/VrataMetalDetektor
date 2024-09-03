@@ -26,6 +26,7 @@ function initScroll() {
     initEnterScreenScroll();
     initHorizontalScrollers();
     initFixedScrolls();
+    handleEnterScreenScrolls();
 }
 
 function handleScroll() {
